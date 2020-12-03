@@ -16,5 +16,11 @@ module.exports = function(source){
   const md = MarkdownIt(options)
   validate(schema, options)
   
+  // 对资源应用一些转换……
+
+  //this.callback(null, md.render(source))
+  //let callback = this.async()
+  //callback(null, md.render(source))
+
   return md.render(source)
 } 
